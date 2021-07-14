@@ -8,6 +8,7 @@ Table of Contents
   * [Debian/Ubuntu](#debian-ubuntu)
   * [RedHat/CentOS/OracleLinux](#redhat-centos-oraclelinux)
 * [Devices Customization](#devices-customization)
+  * [Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)](#__Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)__)
   * [Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)](#microsoft-keyboard:-microsoft-wedge-mobile-keyboard-(bluetooth))
   * [Logitec Mouse Ergonomic: Master MX 3](#logitec-mouse-ergonomic:-master-mx-3)
 
@@ -131,7 +132,7 @@ keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
 keycode 218 = Print NoSymbol Print NoSymbol Print
 ```
 
-### __Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br) __
+### __Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)__
 
 ```bash
 # deac_acute = apostrophe + AltGR
