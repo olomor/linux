@@ -84,64 +84,64 @@ xmodmap -e "keysym Alt_L = Meta_L Alt_L"
 
 #### Quick ref
 
-  >> Conventions
+_Conventions_
 
-  Alias "dead_*" => accent to apply at the second key/char pressed
+Alias "dead_*" => accent to apply at the second key/char pressed
 
-  Format "xmodmap -e" => "keycode NUMBER = NORMAL SHIFTED [NoSymbol] [NoSymbol] AltGR AltGR+L_Shift"
+Format "xmodmap -e" => "keycode NUMBER = NORMAL SHIFTED [NoSymbol] [NoSymbol] AltGR AltGR+L_Shift"
 
-  >> Codes
+_Key Codes_
 
-  ```plain
-  08 AltGR
-  22 Backspace
-  47 : ;
-  48 ' "
-  62 R_Shift
-  50 L_Shift
-  ```
+```plain
+08 AltGR
+22 Backspace
+47 : ;
+48 ' "
+62 R_Shift
+50 L_Shift
+```
 
-  >> Aliases PR_BR
+_Aliases for pt_br Accents_
 
-  ```plain
-  dead_acute
-  dead_grave 
-  dead_tilde
-  dead_circumflex
-  ```
+```plain
+dead_acute
+dead_grave 
+dead_tilde
+dead_circumflex
+```
 
-  >> Defaults en_us.intl Codes
+_Defaults en_us.intl Codes_
 
-  ```plain
-  keycode   9 = Escape NoSymbol Escape
-  keycode  22 = BackSpace BackSpace BackSpace BackSpace
-  keycode  47 = semicolon colon semicolon colon dead_ogonek dead_diaeresis
-  keycode  48 = dead_acute dead_diaeresis apostrophe quotedbl apostrophe quotedbl
-  keycode  49 = dead_grave dead_tilde grave asciitilde grave asciitilde
-  keycode  50 = Shift_L NoSymbol Shift_L NoSymbol Shift_L
-  keycode  62 = Shift_R NoSymbol Shift_R NoSymbol Shift_R
-  keycode  90 = KP_Insert KP_0 KP_Insert KP_0 KP_Insert KP_0
-  keycode  91 = KP_Delete KP_Decimal KP_Delete KP_Decimal
-  keycode 107 = Print Sys_Req Print Sys_Req Print Sys_Req
-  keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift NoSymbol ISO_Level3_Shift
-  keycode 119 = Delete NoSymbol Delete
-  keycode 118 = Insert NoSymbol Insert NoSymbol Insert
-  keycode 135 = Menu NoSymbol Menu
-  keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
-  keycode 218 = Print NoSymbol Print NoSymbol Print
-  ```
+```plain
+keycode   9 = Escape NoSymbol Escape
+keycode  22 = BackSpace BackSpace BackSpace BackSpace
+keycode  47 = semicolon colon semicolon colon dead_ogonek dead_diaeresis
+keycode  48 = dead_acute dead_diaeresis apostrophe quotedbl apostrophe quotedbl
+keycode  49 = dead_grave dead_tilde grave asciitilde grave asciitilde
+keycode  50 = Shift_L NoSymbol Shift_L NoSymbol Shift_L
+keycode  62 = Shift_R NoSymbol Shift_R NoSymbol Shift_R
+keycode  90 = KP_Insert KP_0 KP_Insert KP_0 KP_Insert KP_0
+keycode  91 = KP_Delete KP_Decimal KP_Delete KP_Decimal
+keycode 107 = Print Sys_Req Print Sys_Req Print Sys_Req
+keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keycode 119 = Delete NoSymbol Delete
+keycode 118 = Insert NoSymbol Insert NoSymbol Insert
+keycode 135 = Menu NoSymbol Menu
+keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
+keycode 218 = Print NoSymbol Print NoSymbol Print
+```
 
 ### __Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br) __
 
-  ```bash
-  # deac_acute = apostrophe + AltGR
-  # dead_grave = apostrophe + AltGR + Shift
-  xmodmap -e "keycode 48 = apostrophe quotedbl NoSymbol NoSymbol dead_acute dead_grave"
+```bash
+# deac_acute = apostrophe + AltGR
+# dead_grave = apostrophe + AltGR + Shift
+xmodmap -e "keycode 48 = apostrophe quotedbl NoSymbol NoSymbol dead_acute dead_grave"
 
-  # dead_tilde = semicolumn + AltGr
-  # dead_circumflex = semicolumn + AltGr + Shift
-  xmodmap -e "keycode 47 = semicolon colon NoSymbol NoSymbol dead_tilde dead_circumflex"
-  ```
+# dead_tilde = semicolumn + AltGr
+# dead_circumflex = semicolumn + AltGr + Shift
+xmodmap -e "keycode 47 = semicolon colon NoSymbol NoSymbol dead_tilde dead_circumflex"
+```
 
 ### __Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)__
 
