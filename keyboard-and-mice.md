@@ -9,8 +9,8 @@ Table of Contents
    * [RedHat/CentOS/OracleLinux](#redhat-centos-oraclelinux)
 * [Devices Customization](#devices-customization)
    * [Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)](#keychron-k3-v2-60---portuguese-brazil-accents-pt_br)
-   * [Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)](#microsoft-keyboard:-microsoft-wedge-mobile-keyboard-(bluetooth))
-   * [Logitec Mouse Ergonomic: Master MX 3](#logitec-mouse-ergonomic:-master-mx-3)
+   * [Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)](#microsoft-keyboard-microsoft-wedge-mobile-keyboard-bluetooth)
+   * [Logitec Mouse Ergonomic: Master MX 3](#logitec-mouse-ergonomic-master-mx-3)
 
 ***
 
