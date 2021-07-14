@@ -92,22 +92,27 @@ xmodmap -e "keysym Alt_L = Meta_L Alt_L"
 
   >> Codes
 
+  ```plain
   08 AltGR
   22 Backspace
   47 : ;
   48 ' "
   62 R_Shift
   50 L_Shift
+  ```
 
   >> Aliases PR_BR
 
+  ```plain
   dead_acute
   dead_grave 
   dead_tilde
   dead_circumflex
+  ```
 
   >> Defaults en_us.intl Codes
 
+  ```plain
   keycode   9 = Escape NoSymbol Escape
   keycode  22 = BackSpace BackSpace BackSpace BackSpace
   keycode  47 = semicolon colon semicolon colon dead_ogonek dead_diaeresis
@@ -124,16 +129,19 @@ xmodmap -e "keysym Alt_L = Meta_L Alt_L"
   keycode 135 = Menu NoSymbol Menu
   keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
   keycode 218 = Print NoSymbol Print NoSymbol Print
+  ```
 
 ### __Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br) __
 
-  >> deac_acute = apostrophe + AltGR
-  >> dead_grave = apostrophe + AltGR + Shift
+  ```bash
+  # deac_acute = apostrophe + AltGR
+  # dead_grave = apostrophe + AltGR + Shift
   xmodmap -e "keycode 48 = apostrophe quotedbl NoSymbol NoSymbol dead_acute dead_grave"
 
-  >> dead_tilde = semicolumn + AltGr
-  >> dead_circumflex = semicolumn + AltGr + Shift
+  # dead_tilde = semicolumn + AltGr
+  # dead_circumflex = semicolumn + AltGr + Shift
   xmodmap -e "keycode 47 = semicolon colon NoSymbol NoSymbol dead_tilde dead_circumflex"
+  ```
 
 ### __Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)__
 
