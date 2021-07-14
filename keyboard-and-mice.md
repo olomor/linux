@@ -3,14 +3,14 @@
 Table of Contents
 
 * [Terminal](#terminal)
-** [Remapping Backspace](#remapping-backspace)
-** [Legacy config layout manually](#legacy-config-layout-manually)
-** [Debian/Ubuntu](#debian-ubuntu)
-** [RedHat/CentOS/OracleLinux](#redhat-centos-oraclelinux)
+ * [Remapping Backspace](#remapping-backspace)
+ * [Legacy config layout manually](#legacy-config-layout-manually)
+ * [Debian/Ubuntu](#debian-ubuntu)
+ * [RedHat/CentOS/OracleLinux](#redhat-centos-oraclelinux)
 * [Devices Customization](#devices-customization)
-** [Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)](##keychron-k3-v2-60---portuguese-brazil-accents-pt_br)
-** [Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)](#microsoft-keyboard:-microsoft-wedge-mobile-keyboard-(bluetooth))
-** [Logitec Mouse Ergonomic: Master MX 3](#logitec-mouse-ergonomic:-master-mx-3)
+ * [Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)](##keychron-k3-v2-60---portuguese-brazil-accents-pt_br)
+ * [Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)](#microsoft-keyboard:-microsoft-wedge-mobile-keyboard-(bluetooth))
+ * [Logitec Mouse Ergonomic: Master MX 3](#logitec-mouse-ergonomic:-master-mx-3)
 
 ***
 
@@ -71,9 +71,7 @@ system-config-keyboard
 
 ## Devices Customization
 
-xmodmap -e "keysym Alt_L = Meta_L Alt_L"
-
-### Keyboard With XMODMAP
+### XMODMAP Tool
 
 #### Get KeyCode by keyboard eventpress (at graphic mode)
 
@@ -85,13 +83,13 @@ xmodmap -e "keysym Alt_L = Meta_L Alt_L"
 
 #### Quick ref
 
-_Conventions_
+##### _Conventions_
 
 Alias "dead_*" => accent to apply at the second key/char pressed
 
 Format "xmodmap -e" => "keycode NUMBER = NORMAL SHIFTED [NoSymbol] [NoSymbol] AltGR AltGR+L_Shift"
 
-_Key Codes_
+##### _Key Codes_
 
 ```plain
 08 AltGR
@@ -102,7 +100,7 @@ _Key Codes_
 50 L_Shift
 ```
 
-_Aliases for pt_br Accents_
+##### _Aliases for pt_br Accents_
 
 ```plain
 dead_acute
@@ -111,7 +109,7 @@ dead_tilde
 dead_circumflex
 ```
 
-_Defaults en_us.intl Codes_
+##### _Defaults en_us.intl Codes_
 
 ```plain
 keycode   9 = Escape NoSymbol Escape
