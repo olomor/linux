@@ -172,23 +172,16 @@ xmodmap -e "keycode 218 = Print NoSymbol Print NoSymbol Print"
 
 __Problem__ : Buttons bellow left scroller works only at browser as back page.
 
-__Solution__ : Remap mouse buttons using xbindkeys
+__Solution__ : Remap mouse buttons using xbindkeys.
+
+__Requires__ : Packages "xdotool", "xautomation", "xbindkeys", "xbindkeys-config".
 
 > ~./.xbindkeysrc
 
 ```bash
-#
-#"xte 'key Page_Up'"
-# b:6
-#
-#"xte 'key Page_Down'"
-# b:7
-#
-#"xdotool key 'Control_L+Insert'"
-"xdotool getactivewindow windowminimize"
+"xte 'Page_Up'"
  b:8
 
-#"xdotool key 'Shift_L+Insert'"
-"xdotool search '.*Slack.*UOL.*' windowactivate"
+"xte 'Page_Down'"
  b:9
 ```
