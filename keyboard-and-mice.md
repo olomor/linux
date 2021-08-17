@@ -75,7 +75,9 @@ system-config-keyboard
 
 #### Get KeyCode by keyboard eventpress (at graphic mode)
 
-  xev |egrep "KeyRelease|keycode"
+```shell
+xev |egrep "KeyRelease|keycode"
+```
 
 #### Get Current Map
 
