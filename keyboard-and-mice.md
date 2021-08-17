@@ -130,17 +130,24 @@ keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
 keycode 218 = Print NoSymbol Print NoSymbol Print
 ```
 
-### __Keychron K3 v2 60% - Portuguese Brazil Accents (pt_br)__
+### __Keychron K12 60% - Portuguese Brazil Accents (pt_br)__
+
+__Problem__ : For trained use of a 75% (or more) keyboard with Fn line and a separated key for deadkey of grave/tilde, was very dificult to create habit and so may times mistake pressed the ESC key, it a @!#s by close the current window/app.
+
+__Solution__ : Change default action of ESC key, inverse first action from ESC to accents.
 
 ```bash
-# deac_acute = apostrophe + AltGR
-# dead_grave = apostrophe + AltGR + Shift
-xmodmap -e "keycode 48 = apostrophe quotedbl NoSymbol NoSymbol dead_acute dead_grave"
-
-# dead_tilde = semicolumn + AltGr
-# dead_circumflex = semicolumn + AltGr + Shift
-xmodmap -e "keycode 47 = semicolon colon NoSymbol NoSymbol dead_tilde dead_circumflex"
+# ----------------------------------------------------------------------
+# Keyboard MAP of pt_br to use at "Keycrhon K12"
+# replace ESC(49) by dead_grave and dead_tilde
+# replace Apostrophe(49/fn1+esc) by ESC
+# add "AltGr + '" to apply apostrophe (not dead_acute)
+xmodmap -e "keycode 9 = dead_grave dead_tilde NoSymbol NoSymbol Escape"
+xmodmap -e "keycode 48 = dead_acute quotedbl NoSymbol NoSymbol apostrophe"
+xmodmap -e "keycode 49 = Escape"
 ```
+
+_Obs.: Validate with Ubuntu 20.04 (Ago2021)_
 
 ### __Microsoft Keyboard: Microsoft Wedge Mobile Keyboard (bluetooth)__
 
